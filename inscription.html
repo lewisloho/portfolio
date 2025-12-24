@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Connexion_et_inscription </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+   
+    <style>
+        body{
+            
+            margin: 0;
+            height: 100vh;
+            justify-content: center;
+             align-items: center;
+            background-color: #f4f4f4;
+            display: flex;
+           
+        }
+        .container{
+            width: 300px;
+            text-align: center;
+            background-color:#fff;
+            box-shadow: 0 0 10px ;
+            border-radius: 15px;
+            padding: 10px; 
+        }
+        .insc{
+            font-size: 30px;
+        }
+
+        form input{
+
+            width: 90%;
+            margin: 5px 0;
+            padding: 5px;
+        }
+        #btn{
+            width: 80%;
+            margin: 10px;
+            padding: 8px;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container ">
+        
+            <div class="col-lg-4 bg-white m-auto rounded-top">
+                <h2 class="insc"> Inscription</h2>
+
+                <form action="" id="form0">
+                    <div class="input-group  mb-3">
+                        <span class="input-group-text">
+                            <i class="fa fa-user">
+                            </i> 
+                        </span>
+                        <input type="text" class="form-control" placeholder="Nom " required>
+                    </div>
+                    <div class="input-group  mb-3">
+                        <span class="input-group-text">
+                            <i class="fa fa-user">
+                            </i> 
+                        </span>
+                        <input type="text" class="form-control" placeholder="Prénom " required>
+                    </div>
+                    <div class="input-group  mb-3">
+                        <span class="input-group-text">
+                            <i class="fa fa-envelope">
+                            </i> 
+                        </span>
+                        <input type="email" id="email" class="form-control" placeholder="Email"required>
+                    </div>
+                    <div class="input-group  mb-3">
+                        <span class="input-group-text">
+                            <i class="fa fa-lock">
+                            </i> 
+                        </span>
+                        <input type="password" id="passeword" placeholder="Mot de passe"required>
+                    </div>
+                    
+                    <button type="submit" id="btn"> valider</button>
+
+                    <p id="message" style="color: hsl(128, 98%, 50%); font-size: 20px;"></p>
+                   
+                    <div class="info">
+                        <p class="text-center text-muted mt-3">
+                            En cliquant sur S’inscrire, vous acceptez nos <a href="#">  Conditions générales</a>,
+                             notre <a href=""> Politique de confidentialité </a> et notre <a href="#">  Politique d’utilisation</a> des cookies.
+                             <a href="index.html">Retour</a>
+                        </p>
+                        <p class="text-center">
+                             Avez vous déjà un compte ?<a href="connexion.html"> Connexion </a>
+                        </p>
+                    </div>
+                </form>
+
+            </div>
+    </div>
+
+     <script>
+        document.getElementById('form0').addEventListener('submit', function(vent){
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+
+            const passeword = document.getElementById('passeword').value ;
+
+            if(email === '' && passeword ==='' ){
+                window.location.href = '';
+            } else {
+                document.getElementById('message').textContent = 'Votre compte a été crée avec succès';
+            }
+        
+        } );
+    </script>
+    
+</body>
+</html> 

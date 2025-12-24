@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Connexion_inscription </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/all.min.css'>   
+  
+    <style>
+        body{
+            background-color: rgb(237, 240, 243);
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .container{
+            background-color: #fff;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 0 10px;
+        }
+        
+        form input{
+
+            width: 90%;
+            margin: 5px 0;
+            padding: 5px;
+        }
+           #btn{
+            width: 80%;
+            margin: 10px;
+            padding: 8px;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+   
+    <div class="container ">
+        <div class="row mt-5">
+           
+            <div class="col-lg-4 bg-white m-auto rounded-top">
+                <h2 class="text-center"> Connexion</h2>
+                <p class="text-center text-muted lead"> Se connecter à WWW </p>
+
+                <form action="" id="container01">
+                    <div class="input-group  mb-3">
+                        <span class="input-group-text">
+                            <i class="fa fa-envelope">
+                            </i> 
+                        </span>
+                        <input type="email" id="email" class="form-control" placeholder="Adresse e-mail  " required>
+                    </div>
+                
+                    <div class="input-group  mb-3">
+                        <span class="input-group-text">
+                            <i class="fa fa-lock">
+                            </i> 
+                        </span>
+                        <input type="password" id="passeword" class="form-control" placeholder="Mot de passe " required>
+                    </div>
+                    <div class="d-grid">
+                        <button id="btn">Se connecter</button>
+                       
+                        <p id="message" style="color: red;"></p>
+                        <p class="text-center">
+                              vous n'avez pas de compte ?<a href="inscription.html"> Inscription </a>
+                        </p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('container01').addEventListener('submit', function(vent){
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+
+            const passeword = document.getElementById('passeword').value ;
+
+            if(email === 'lewisloho73@gmail.com' && passeword ==='2025' ){
+                window.location.href = 'essaie.html';
+            } else {
+                document.getElementById('message').textContent = 'Désolé la partie reservée pour LEWIS';
+            }
+        
+        } );
+    </script>
+    
+</body>
+</html> 

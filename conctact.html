@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+
+            max-width: 100%;
+            height: 100%;
+            background-color: rgb(125, 163, 163);
+        }
+
+        .acceuil{
+            background-color: rgb(6, 160, 160);
+            padding: 20px;
+            text-align: center;
+           
+        }
+        body .acceuil{
+        min-width: 96%;
+        }
+        .acceuil a{
+            margin: 15px;
+            background-color: rgb(29, 248, 9);
+            padding: 6px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            transition: all 2s;
+        }
+        .acceuil a:hover{
+            
+            background-color:rgb(98, 7, 173) ;
+            color: #FFF;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .content{
+            position: relative;
+            text-align: center;
+            background-color: rgb(155, 168, 263);
+            width: 80%;
+            height: 250PX;
+            border-radius: 20PX;
+            left: 10%;
+            top: 30px;  
+           
+        }
+        h1 {
+            position: relative;
+            color: blue;
+            top: 45px;
+            font-size: 40px;
+        }
+        .content p{
+            margin: 0 50px;
+        }
+        p{
+            position: relative;
+            color: blue;
+            top: 50px; 
+            font-size: 20px;
+        }
+
+        .conct{
+            position: relative;
+            text-align: center;
+            color: #220101;
+            font-size: 25px;
+            top: 50px;     
+        }
+
+        #contacts{
+          position: relative;
+          top: 80px;
+          display: flex;
+          justify-content: space-around;
+          text-align: justify;
+     
+        }
+
+       #tel{
+        position: relative;
+        background-color: rgb(125, 163, 163);
+        border-radius: 20px;
+        transition: all  2s;
+        box-shadow: 0 0 10px rgba(10, 0, 0, 0.1);
+        width: 200px;
+        height: 180px;
+        text-align: center;
+        
+       }
+
+       #tel:hover{
+        background-color: rgb(155, 168, 263); 
+       }
+
+       #tel p{
+        text-align: center;
+        color: #6207f5;
+        font-size: 20px;
+        font-weight: bold;
+       
+       }
+
+       #tel img{
+       position: relative;
+       top: 20px;
+       }
+
+       #Email{
+       
+        background-color: rgb(125, 163, 163);
+        box-shadow: 0 0 10px rgba(10, 0, 0, 0.1);
+        border-radius: 20px;
+        transition: all 2s ;
+        height: 180px;
+        width: 200px;
+        padding: 15px;
+        text-align: center;
+       
+       }
+       #Email:hover{
+        background-color: rgb(155, 168, 263);
+       }
+       #Email img{
+         position: relative;
+         top: 20px;
+       }
+       #Email p{
+        text-align: center;
+        color: #6207f5;
+        font-size: 18px;
+        font-weight: bold;
+       }
+
+       #facebook{
+       
+        background-color: rgb(125, 163, 163);
+        box-shadow: 0 0 10px rgba(10, 0, 0, 0.1);
+        border-radius: 20px;
+        transition: all 2s ;
+        width: 200px;
+        height: 180px;
+        text-align: center;
+       
+
+       }
+       #facebook:hover{
+        background-color: rgb(155, 168, 263);
+       }
+       #facebook img{
+        position: relative;
+        top: 20px;
+       }
+       #facebook p{
+        text-align: center;
+        color: #6207f5;
+        font-size: 20px;
+        font-weight: bold;
+       }
+
+       #instagram{
+        position: relative;
+        background-color: rgb(125, 163, 163);
+        box-shadow: 0 0 10px rgba(10, 0, 0, 0.1);
+        border-radius: 20px;
+        transition: all 2s;
+        width: 200px;
+        height: 180px;
+        text-align: center;
+      
+       }
+       #instagram:hover{
+        background-color: rgb(155, 168, 263);
+       }
+       #instagram img{
+        position: relative;
+       top: 20px;
+       }
+       #instagram p{
+        text-align: center;
+        color: #6207f5;
+        font-size: 20px;
+        font-weight: bold;
+       }
+
+       @media screen and (max-width:760px){
+
+            .acceuil{
+              
+                width: 100%;
+            }
+
+            .acceuil a{
+               
+                font-size: 15px;
+                margin: 0px;
+            }
+            .acceuil a:hover{
+                padding: 2px;
+            }
+            .content{
+            
+             padding-bottom: 100px;
+            }
+            .content p{
+               font-size: 20px;
+          
+            }
+
+            #contacts{
+              margin: 20px;
+              justify-content: center;
+              text-align: center;
+              align-items: center;
+              display: grid;
+              grid-template-columns:repeat(2,2fr);
+              
+               
+            }
+            #Email {
+              width: 170px; 
+            }
+          
+   
+            .formulaire{
+                position: relative;
+               
+            }
+            .formulaire p{
+                position:relative;  
+            }
+            #form0{
+              width: 90%;
+              left: 10px;
+              position: relative;
+
+            }
+
+            #cont{
+              width: 100px;
+            }
+            .questions{
+              text-align: center;
+              position: relative;
+              height: 1000px;
+             
+           }
+
+
+           footer p{
+            font-size: 20px;
+           }
+      
+          footer img{
+            border-radius: 10px;
+            width: 100px;
+            left: 40px;
+            position: relative;
+          }
+
+
+
+       }
+       footer img{
+        width: 80px;
+         border-radius: 30px;
+         position: relative;
+         top: 50px; 
+       }
+
+       footer p{
+        color: aliceblue;
+         font-size: 25px;
+         font-weight: bold; 
+         
+       }
+
+       #footer_logo{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        top: 20px;
+        gap: 2rem;
+       }
+      
+       form{
+        position: relative;
+        text-align: center;
+       
+       }
+      .formulaire{
+        position: relative;
+        text-align: center;
+        font-size: 35px;
+        top: 150px;
+      }
+      .formulaire p{
+        position: relative;
+        font-size: 30px;
+        top: 2px;
+    
+      }
+      form{
+        background-color: rgb(125, 163, 163);
+        box-shadow: 0 0 10px ;
+        height: 650px;
+        position: relative;
+        width: 50%;
+        left: 25%;
+        border-radius: 20px;
+        top: 200px;
+      }
+     
+      .message{
+        
+        position: relative;
+        top: 20px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(125, 163, 163);
+      }
+    
+      label{
+
+        font-size: 25px;
+        display: flex;
+        padding:  8px;
+      }  
+      input{
+        width: 100%;
+        height: 25px;
+        background-color: rgb(125, 163, 163);
+        border-radius: 10px;
+      }
+      select{
+        background-color: rgb(125, 163, 163);
+        border-radius: 10px;
+        width: 100%;
+        height: 35px;
+        box-shadow: 0 0 3px ;
+        border:  1px solid;
+      }
+
+      textarea{
+        background-color: rgb(125, 163, 163);
+        border-radius: 10px;
+        width: 100%;
+        height: 68px;
+        border:  1px solid;
+        box-shadow: 0 0 3px ;
+       
+      }
+
+      button{
+        position:relative;
+        background-color: rgb(125, 163, 163);
+        border-radius:10px;
+        width: 85%;
+        height: 30px;
+        top: 30px;
+        background-color: #068cca;
+        font-size: 20px;
+        transition: all 2s;
+        cursor: pointer;
+      }
+      button:hover{
+        background-color:crimson;
+      }
+
+      .questions .Q{
+       box-shadow: 0 0 10px;
+        width: 350px;
+        height: 250px; 
+        margin: 10px;
+        border-radius: 15PX;  
+        position: relative;
+        top:40px
+
+      }
+      .QT{
+        display:flex;
+       flex-wrap: wrap;
+       justify-content:space-evenly;
+      }
+      .questions h2{
+        font-size: 35px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px;
+      }
+
+      .questions span{
+        font-style: oblique;
+        font-size: 20px;
+       
+      }
+      .questions{
+        text-align: center;
+        position: relative;
+        top: 250px;
+      }
+
+      #repo{
+        font-size: 35px;
+        font-weight: bold;
+      }
+      .Q h3{
+
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      #spa{
+       margin: 50px;
+      }
+
+      footer{
+        width: 100%;
+        background-color: rgb(7, 35, 37);
+        position: relative; 
+        top: 350px;
+        height: 300px;
+       justify-content: center;
+        align-items: center;
+        text-align: center;
+      }   
+    </style>
+</head>
+<body>
+
+    
+    <div class="acceuil">
+        <a href="index.html">Acceuil</a>
+        <a href="connexion.html">Se connecter</a>
+        <a href="#contacter">Contactez-nous</a>
+    </div>
+
+    <div class="content">
+        <h1>Conctactez-nous</h1>
+        <p>Je suis là juste  pour vous  faire plaisir à vos questions, 
+            et je ne suis pas seul, il y a mes frère qui sont toujours disponible pour 
+            répondre à vos questions, frère <b>Bonny</b> et Frère <b>Edo</b>
+        </p>
+
+
+    </div>
+
+    <div class="conct" id="contacter">
+
+        <h2> Les informations pour me contacter </h2>
+        <span>Voici mes differentes possibilités de nous
+             rejoindre </span>
+    </div>
+
+    <div class="CONCTACT">
+
+        <div id="contacts" >
+
+        <div id="tel" id="cont">
+            <a href="tel:0812220795"><img src="profil/utilisateur.png" alt="" width="50px"></a>
+
+            <p>Numero Téléphone: +243 812 220 795</p>
+        </div>
+
+        <div id="Email" id="cont">
+         <a href="mailto:lewisloho73@gmail.com">  <img src="profil/vecteezy_google-mail-gmail-icon-logo-symbol_22613021.png" alt="" width="50px"></a>
+         <p><span>Email <br></span> lewisloho73@gmail.com</p>
+        </div>
+
+        <div id="facebook" id="cont">
+            <a href="https://www.facebook.com/profile.php?id=100074505860977"> <img src="profil/facebook.png" alt="" width="50px"></a>
+            <p><span>Facebook</span><br> LEWIS LOHO</p>
+        </div>
+
+        <div id="instagram" id="cont">
+            <a href="https://www.instagram.com/lohompetilewis/"> <img src="profil/instagram.png" alt="" width="50px"> </a>
+            <p><span>Instagram</span><br>@lohompeti</p>
+        </div>
+    </div>
+        
+    </div>
+
+    <div class="formulaire">
+
+        <h3>Formulaire de Conctact</h3>
+        <p>Laissez-nous un message et nous vous répondrons rapidement</p>
+
+    </div>
+
+    <form action="" id="form0">
+        <div class="message" >
+
+            <label  class="for" for="nom"> Nom </label>
+            <input type="text" name="nom" id="nom"required>
+            <label for="prenom">Prenom</label>
+            <input type="text" name="prenom" id="prenom" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="tel">Téléphone</Label>
+            <input type="tel" name="telephone" id="tel0"required>
+            <label for="adresse">Adresse</label>
+            <input type="text" name="adresse" id="adresse"required>
+       
+            <label for="subject">Sujet</label>
+            <select id="subject" name="subject" required>
+                <option value="">Choisissez un sujet</option>
+                <option value="cours">Question sur les cours</option>
+                <option value="inscription">Inscription</option>
+                <option value="technique">Support technique</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Message....." required></textarea>  
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <div class="questions">
+
+        <h2>Questions Fréquentes</h2>
+        <span id="repo">Réponses à vos questions les plus courantes</span>
+        <div class="QT">
+
+        <div class="Q">
+            <h3>Comment puis-je m'inscrire pour avoir nue carte ?</h3>
+            <span id="sp">Vous pouvez vous inscrire directement depuis
+                la page d'authentificaion en cliquant sur le bouton 
+                "<a href="connexion.html">Se connecter</a>" ou via la page "<a href="index.html">D'acceuil</a>"</span>
+
+        </div>
+        <div class="Q">
+            <h3>Comment puis-je faire l'impression du carte ?</h3>
+            <span>Pour faire l'impression votre catre il faut avoir un compte,
+                 puis vous allez se diriger sur la page connexion et vous inserer les inforations puis vous appayez sur le bouton "Impression".</span>
+
+        </div>
+        <div class="Q">
+            <h3>Comment puis-je sauvegarder les données à la base de données  ?</h3>
+            <span>Pour enregistrer les informations à la base de données il faut d'abord remplir tous les champs puis vous allez appayer sur le bouton "Valider" ?</span>
+        </div>
+        </div>
+    </div>
+
+    <footer>
+       <div id="footer_logo">
+  
+         <img src="profil/1735212770235.jpg" alt="" >
+         <p>
+           Le plagiat tue la recherche et l'enseigment Universitaire
+          </p>
+  
+        </div> 
+    </footer>
+    
+</body>
+</html>
