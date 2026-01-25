@@ -105,8 +105,7 @@ font-weight: bold;
 }
 
 .droite{
-
-width: 100%;
+width: 120%;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -117,7 +116,7 @@ flex-wrap: wrap;
     position: relative;
    display:block;
     top:18px;
-    max-width:100% ;
+    max-width:120% ;
     height:auto;
     object-fit: cover;
     z-index: 10;
@@ -768,6 +767,7 @@ cursor: pointer;
             color: red;
             font-size: 18px;
         }
+
 
 
 
