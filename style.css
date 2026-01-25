@@ -106,19 +106,19 @@ font-weight: bold;
 
 .droite{
 
-width: 120%;
-height: 100%; 
+width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-position: relative;
+flex-wrap: wrap;
 }
  
 .droite img{ 
     position: relative;
+   display:block;
     top:18px;
-    width:120% ;
-    height: 100%;
+    max-width:100% ;
+    height:auto;
     object-fit: cover;
     z-index: 10;
 }
@@ -774,4 +774,5 @@ cursor: pointer;
             color: red;
             font-size: 18px;
         }
+
 
