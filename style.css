@@ -105,21 +105,21 @@ font-weight: bold;
 }
 
 .droite{
-width: 120%;
-display: flex;
-justify-content: center;
-align-items: center;
+width: 100%;
+aspect-ratio:16/9;
+overfllow:hidden;
+position:relative;
 flex-wrap: wrap;
 }
  
 .droite img{ 
-    position: relative;
-   display:block;
-    top:18px;
-    max-width:120% ;
-    height:auto;
+    position: absolute;
+   height:100%;
+    width:100%;
     object-fit: cover;
     z-index: 10;
+   top:0;
+   left:0;
 }
 .effes{
 
@@ -767,6 +767,7 @@ cursor: pointer;
             color: red;
             font-size: 18px;
         }
+
 
 
 
